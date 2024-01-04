@@ -18,7 +18,7 @@ const IntroContent = () => {
               <span className="icon">
                 <img src={hand} alt="" />
               </span>
-              <span className="text">There</span>
+              <span className="text">There!!!</span>
             </span>
             <span className="big-text">Our Portfolio</span>
           </h1>
