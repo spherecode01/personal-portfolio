@@ -19,7 +19,7 @@ const Footer = () => {
             <img
                 src={bluesphere}
                 alt="Codasphere"
-  /> */}
+  /> 
         </div>
         <ul className="footer-menu-items">
             <li
