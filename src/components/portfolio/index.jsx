@@ -9,20 +9,28 @@ import Showcase from "./showcase";
 const projectsData = [
     {
         id: 1,
-        name: "Healthy Food Restraunt",
-        tags: ["web-app", "mobile-app"],
+        name: "Netflix Clone",
+        tags: ["web-app",],
         media: {
-            thumbnail: require("../images/portfolio/thumb-1.jpg"),
+            thumbnail: require("../images/nf.jpg"),
         },
+        details: [
+          "This project is a clone of the Netflix website.movie browsing, and search functionality.",
+          "",
+        ]
     },
-    {
+   /*{
         id: 2,
         name: "Google",
         tags: ["web-page"],
         media: {
             thumbnail: require("../images/google.jpg"),
         },
-    },
+        details: [
+          "This is a Google Clone.Proper Search Engine and search functionality.",
+          "",
+        ]
+    },*/
     {
         id: 3,
         name: "Movie X",
@@ -30,14 +38,20 @@ const projectsData = [
         media: {
             thumbnail: require("../images/movie.jpg"),
         },
+        details: [
+          "This is a Online Streaming Platform, To stream movies and webseries you like.",
+        ]
     },
     {
         id: 4,
-        name: "Business Analytics Web App",
-        tags: ["web-app", "mobile-app"],
+        name: "Fitness Tracker",
+        tags: ["web-app",],
         media: {
-            thumbnail: require("../images/portfolio/thumb-1.jpg"),
+            thumbnail: require("../images/fitness.jpg"),
         },
+        details: [
+          "This is a Fitness Tracker Webapplication where you can track your Progress!!.",
+        ]
     },
     {
         id: 5,
@@ -46,31 +60,70 @@ const projectsData = [
         media: {
             thumbnail: require("../images/youtube.jpg"),
         },
+        details: [
+          "Welcome to the YouTube Clone, Where you can surf vidoes of your choise",
+        ]
     },
-    {
+   /* {
         id: 6,
-        name: "Dashboard",
-        tags: ["product", "mobile-app"],
+        name: "Food App",
+        tags: ["product",],
         media: {
-            thumbnail: require("../images/portfolio/thumb-4.jpg"),
+            thumbnail: require("../images/Food.jpg"),
         },
-    },
+    },*/
     {
         id: 7,
-        name: "Digital Creative Agency",
+        name: "Weather App",
         tags: ["web-app"],
         media: {
-            thumbnail: require("../images/portfolio/thumb-3.jpg"),
+            thumbnail: require("../images/weather2.jpg"),
         },
+        details: [
+          "Want to see the Live Weather Update then chech out this application.",
+        ]
     },
     {
         id: 8,
         name: "Admin Dashboard",
-        tags: ["web-app", "mobile-app", "web-page"],
+        tags: [ "web-page"],
         media: {
             thumbnail: require("../images/dasboard.jpg"),
         },
+        details: [
+          "This project can manage your Data and trasform it into charts and graphs",
+        ]
     },
+  /*  {
+      id: 9,
+      name: "Creative Design",
+      tags: [ "product"],
+      media: {
+          thumbnail: require("../images/creative.jpg"),
+      },
+  },*/
+  {
+    id: 10,
+    name: "Business Site",
+    tags: [ "product"],
+    media: {
+        thumbnail: require("../images/business.jpg"),
+    },
+    details: [
+      "A simple structure of a static business website",
+    ]
+},
+{
+  id: 11,
+  name: "E-Commerce",
+  tags: [ "mobile-app"],
+  media: {
+      thumbnail: require("../images/shop.jpg"),
+  },
+  details: [
+    "Welcome to the store where you can buy products of your choise",
+  ]
+},
 ]
 
 
@@ -118,4 +171,3 @@ const Portfolio = () => {
 
 
 
-//https://chimerical-melomakarona-91f8f3.netlify.app
