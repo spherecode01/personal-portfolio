@@ -1,10 +1,6 @@
 import React from "react";
 import "./style.scss";
 import hand from "../../images/hand.png";
-import CallToAction from "../../shared/CallToAction";
-//import newedit from "../../images/newedit.png";
-import { BsAwardFill } from "react-icons/bs";
-import { FaUser } from "react-icons/fa";
 import girl from "../../images/girl.png";
 
 const IntroContent = () => {
@@ -29,25 +25,9 @@ const IntroContent = () => {
            and flawless execution sets us apart. Join us on the journey where every line of 
            code tells a story, and every website we build is a testament to excellence in web development."
           </p>
-         {/* <CallToAction text="Contact me"  /> */}
         </div>
         <div className="right-col">
           <img src={girl} alt="" />
-          { /*<div className="highlights horizontal">
-             <div className="icon">
-                       <BsAwardFill /> 
-  </div> 
-  <div className="text">Best Design Award</div> 
-  </div> */ }
-         { /*<div className="highlights verticle">
-            <div className="icon">
-              <FaUser />
-            </div>
-            <div className="text">
-              <span>4k+</span>
-              Happy Customers
-            </div>
-</div> */ }
         </div>
       </div>
     </div>

@@ -1,18 +1,16 @@
 import React from "react";
 import "./style.scss";
 import Section from "../shared/section";
-//import techicons from "../images/tech-icons.png";
 import skilllogo from "../images/skilllogo.png";
-import CallToAction from "../shared/CallToAction";
-import {AiOutlineCloudDownload} from "react-icons/ai";
+
 
 const Skills = () => {
   return (
     <Section background="dark" id="skills">
       <div className="skills-content-wrapper">
         <div className="left-col">
-          <img src={skilllogo}/>
-         {/* <img src={techicons} alt="" /> */}
+          <img src={skilllogo} alt="skilllogo"/>
+         
         </div>
         <div className="right-col">
           <h2>Skills</h2>
@@ -25,7 +23,6 @@ const Skills = () => {
           captivating online experiences."
           
           </p>
-         { /*<CallToAction text="Download CV" icon={<AiOutlineCloudDownload />} /> */}
         </div>
       </div>
     </Section>
