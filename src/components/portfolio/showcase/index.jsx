@@ -25,10 +25,7 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
       const netlifyLink = netlifyLinks[selectedProjectId];
       console.log("Netlify link:", netlifyLink);
 
-      if (netlifyLink) {
-        window.open(netlifyLink, '_blank');
-      }
-    };
+     
 
     const debouncedRedirect = debounce(handleNetlifyRedirect, 300);
 
@@ -105,8 +102,6 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
 
     const netlifyLink = netlifyLinks[projectId];
     console.log("Netlify link:", netlifyLink);
-
-   
 
     // You can also do something with projectDetails here if needed
    // console.log("Project Details:", projectDetails);
