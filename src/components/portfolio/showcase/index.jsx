@@ -97,11 +97,17 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
       6: "https://mellow-crostata-802642.netlify.app/", // Food App
       9: "https://splendorous-cassata-785abc.netlify.app/", // Creative Design
       10 : "https://precious-pavlova-f1b338.netlify.app/", //Business website
-      11: "https://willowy-sopapillas-32f907.netlify.app/" // Ecommerce website
+      11: "https://willowy-sopapillas-32f907.netlify.app/", // Ecommerce website
+      12: "https://guileless-zabaione-19ebfc.netlify.app", //Nike Store
+      13: "https://lustrous-sunshine-39cc5a.netlify.app/", //Gallery
     };
 
     const netlifyLink = netlifyLinks[projectId];
     console.log("Netlify link:", netlifyLink);
+
+     if (netlifyLink) {
+      window.open(netlifyLink, '_blank');
+    }
 
     // You can also do something with projectDetails here if needed
    // console.log("Project Details:", projectDetails);

@@ -64,14 +64,17 @@ const projectsData = [
           "Welcome to the YouTube Clone, Where you can surf vidoes of your choise",
         ]
     },
-   /* {
-        id: 6,
-        name: "Food App",
+    {
+        id: 13,
+        name: "Gallery",
         tags: ["product",],
         media: {
-            thumbnail: require("../images/Food.jpg"),
+            thumbnail: require("../images/gallery.jpg"),
         },
-    },*/
+        details: [
+          "Welcome to your gallery, where your photos are saved",
+        ]
+    },
     {
         id: 7,
         name: "Weather App",
@@ -94,14 +97,17 @@ const projectsData = [
           "This project can manage your Data and trasform it into charts and graphs",
         ]
     },
-  /*  {
-      id: 9,
-      name: "Creative Design",
+    {
+      id: 12,
+      name: "Nike Store",
       tags: [ "product"],
       media: {
-          thumbnail: require("../images/creative.jpg"),
+          thumbnail: require("../images/shoes.webp"),
       },
-  },*/
+      details: [
+        "This is a Shoes store for Nike Brand",
+      ]
+  },
   {
     id: 10,
     name: "Business Site",

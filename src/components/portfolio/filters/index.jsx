@@ -8,7 +8,7 @@ const filtersData = [
         id: "all",
     },
     {
-        name: "HTML+CSS",
+        name: "Javascript",
         id: "product",
     },
     {
