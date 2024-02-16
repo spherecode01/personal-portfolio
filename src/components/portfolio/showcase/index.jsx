@@ -149,7 +149,7 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
                 </div>
               )}
               <span className="text">
-                {hoveredProject === project.id ? "Project Details" : "Hover for Details"}
+                {hoveredProject === project.id ? "" : "Hover for Details"}
               </span>
              {/* <Arrow /> */}
             </div>

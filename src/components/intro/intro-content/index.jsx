@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import hand from "../../images/hand.png";
-import girl from "../../images/girl.png";
+import develop from "../../images/developer.png"
 
 const IntroContent = () => {
   return (
@@ -27,7 +27,7 @@ const IntroContent = () => {
           </p>
         </div>
         <div className="right-col">
-          <img src={girl} alt="" />
+          <img src={develop} alt="" />
         </div>
       </div>
     </div>
