@@ -8,7 +8,8 @@ import {MdEmail} from "react-icons/md";
 const ContactInfo = () => {
   return (
     <div className="contact-info-box">
-        <h4>I would be happy to answer any questions you may have about freelance writing or content marketing!</h4>
+        <p>Let's collaborate to bring your vision to life and create something extraordinary together.
+        Reach out today, and let's embark on an exciting journey of digital transformation!</p>
         <div className="contact-option">
             <FaPhoneAlt />
             <span className='text'>+91 8637195839</span>

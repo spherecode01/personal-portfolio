@@ -1,10 +1,9 @@
 import React from 'react'
-import "./style.scss";
-
 import { send } from "emailjs-com";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./style.scss";
 
 
 
@@ -37,10 +36,10 @@ const Form = () => {
         <form id="queryForm" onSubmit={handleSubmit(onSubmit)}>
           <div className="input-field">
             <input type='text' name='from_name' placeholder='Name' {...register("from_name", {
-              required: "Name is required"
+              required: "Name is required",
             })}
             />
-            {errors.from_name?.message && <p className="errors">{errors.from_name?.message}</p>}
+            {errors.from_name?.message && (<p className="error">{errors.from_name?.message}</p>)}
                     
           </div>
 
@@ -51,7 +50,7 @@ const Form = () => {
                 message: "Invalid email address",
             },
             })} />
-             {errors.reply_to?.message && <p className="errors">{errors.reply_to?.message}</p>}
+             {errors.reply_to?.message && (<p className="error">{errors.reply_to?.message}</p>)}
           </div>
 
           <div className="input-field">
@@ -61,7 +60,7 @@ const Form = () => {
                 message: "Phone number is not valid",
             },
             })} />
-            {errors.phone_number?.message && <p className="errors">{errors.phone_number?.message}</p>}
+            {errors.phone_number?.message && <p className="error">{errors.phone_number?.message}</p>}
           </div>
 
           <div className="input-field">
@@ -71,7 +70,7 @@ const Form = () => {
                 message: "Minimum 10 characters required",
             },
             })} />
-            {errors.subject?.message && <p className="errors">{errors.subject?.message}</p>}
+            {errors.subject?.message && <p className="error">{errors.subject?.message}</p>}
           </div>
 
           <div className="input-field full-width">
@@ -85,7 +84,7 @@ const Form = () => {
               message: "Maximum 500 characters allowed",
           },
           })} />
-          {errors.message?.message && <p className="errors">{errors.message?.message}</p>}
+          {errors.message?.message && <p className="error">{errors.message?.message}</p>}
           </div>
 
           <button type='submit'>Submit</button>

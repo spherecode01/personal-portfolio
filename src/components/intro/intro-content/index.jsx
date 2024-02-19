@@ -10,11 +10,8 @@ const IntroContent = () => {
         <div className="left-col">
           <h1 className="title">
             <span className="small-text">
-              <span className="text">Hello</span>
-              <span className="icon">
-                <img src={hand} alt="" />
-              </span>
-              <span className="text">There!!!</span>
+              <span className="text">Welcome</span>
+              <span className="text">to</span>
             </span>
             <span className="big-text">Our Portfolio</span>
           </h1>
