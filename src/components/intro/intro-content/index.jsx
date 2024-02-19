@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.scss";
-import hand from "../../images/hand.png";
 import develop from "../../images/developer.png"
 
 const IntroContent = () => {
