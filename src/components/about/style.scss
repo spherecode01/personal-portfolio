@@ -1,0 +1,218 @@
+body{
+    color: #ededed;
+    background: #081b29;
+}
+@keyframes slideTop{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 160px;
+}
+    .about-img {
+    .img-container {        //center first then outer circle (image container first then img
+        width: 100px; 
+        height: 480px;
+        //overflow: hidden; 
+        padding-right: 137px;
+        border-radius: 900px; 
+        padding-left: 233px;
+        padding-top: 100PX;
+        padding-bottom: 100px;
+        padding-top: 20px;
+        //new style
+       // background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    }
+}
+.about-img {
+    .img {
+        display: block;
+        border-radius: 50%;
+        padding-bottom: 20%;
+        max-width: 530px;
+        border-radius: 8px;
+        padding-top: 60px;
+        padding-left: 100px;
+        //new style
+        cursor: pointer;
+        /*height: 400px;
+        width: 400px;
+        border-radius: 50%;*/
+       
+    }
+}
+  
+  
+  
+.about-text h2{
+    font-size: 60px;
+}
+.about-text h2 span{
+    color: #0ef;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px 10px;
+    transition: text-shadow 0.5s, border-color 0.5s;
+}
+.about-text h2 span:hover{
+    text-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    //margin-right: 60px;
+    padding-right: 140px;
+    
+}
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    background: none;
+}
+.sub-title span{
+    //background: #000000;
+    color: #0ef;
+    //color: transparent;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    //border: 2px solid transparent;
+    padding: 5px 10px;
+    transition: text-shadow 0.5s, border-color 0.5s;
+}
+.sub-title span:hover{
+    text-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+    border-color: cyan; /* Change border color on hover */
+    /*box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan,
+                0 0 200px cyan;*/
+}
+.container {
+    padding: 90px;
+    padding-bottom: 90px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap:40px;
+    margin-top: 10px;
+    padding-top: 2px;
+}
+.services-list div{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: backround 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7
+}
+.tab{
+    padding-top: 80px;
+    height: 600px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-top: 200px;
+}
+
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 270px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    color: #0ef;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
+
+.read:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+
+
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+/*
+.img::before {
+    content: '';
+    position: absolute;
+    top: -10px; 
+    right: -10px; 
+    bottom: -10px; 
+    left: -10px; 
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    border-radius: 50%; /* Make sure to match the border-radius of the image 
+}*/

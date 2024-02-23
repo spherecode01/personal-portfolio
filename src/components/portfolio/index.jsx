@@ -19,18 +19,30 @@ const projectsData = [
           "",
         ]
     },
-   /*{
-        id: 2,
-        name: "Google",
-        tags: ["web-page"],
+   {
+        id: 14,
+        name: "Promptopia",
+        tags: ["mobile-app"],
         media: {
-            thumbnail: require("../images/google.jpg"),
+            thumbnail: require("../images/socialmedia.webp"),
         },
         details: [
-          "This is a Google Clone.Proper Search Engine and search functionality.",
+          "This is a Social Media Application to connect with your friends.",
           "",
         ]
-    },*/
+    },
+    {
+      id: 15,
+      name: "Hotel Booking",
+      tags: ["mobile-app"],
+      media: {
+          thumbnail: require("../images/hotel.jpg"),
+      },
+      details: [
+        "This is a Hotel Booking Web Application",
+        "",
+      ]
+  },
     {
         id: 3,
         name: "Movie X",
@@ -108,7 +120,7 @@ const projectsData = [
         "This is a Shoes store for Nike Brand",
       ]
   },
-  {
+  /*{
     id: 10,
     name: "Business Site",
     tags: [ "product"],
@@ -118,7 +130,7 @@ const projectsData = [
     details: [
       "A simple structure of a static business website",
     ]
-},
+},*/
 {
   id: 11,
   name: "E-Commerce",
@@ -136,7 +148,7 @@ const projectsData = [
 
 
 const Portfolio = () => {
-    const [projects, setProjects] = useState(projectsData);
+    const [projects, setProjects] = useState(projectsData.slice(0,8));
     const [transition, setTransition] = useState(false);
     const [selectedProjectId, setSelectedProjectId] = useState(null);
   
@@ -148,7 +160,7 @@ const Portfolio = () => {
           const filteredProjects = projectsData.filter((f) => f.tags.includes(tag));
           setProjects(filteredProjects);
         } else {
-          setProjects(projectsData);
+          setProjects(projectsData.slice(0,8));
         }
         setTransition("zoomin");
       }, 200);

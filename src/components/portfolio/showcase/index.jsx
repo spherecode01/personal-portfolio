@@ -100,6 +100,8 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
       11: "https://willowy-sopapillas-32f907.netlify.app/", // Ecommerce website
       12: "https://guileless-zabaione-19ebfc.netlify.app", //Nike Store
       13: "https://lustrous-sunshine-39cc5a.netlify.app/", //Gallery
+      14: "https://eclectic-stroopwafel-dbfb70.netlify.app/", //social-media
+      15: "https://helpful-muffin-78b947.netlify.app" // hotel booking
     };
 
     const netlifyLink = netlifyLinks[projectId];
@@ -144,7 +146,7 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
                 <div className="project-details">
                   {/* Display project details dynamically */}
                   {project.details && project.details.map((detail, index) => (
-                    <p key={index}>{detail}</p>
+                    <p key={index}  style={{ color: 'black' }}> {detail}</p>
                   ))}
                 </div>
               )}

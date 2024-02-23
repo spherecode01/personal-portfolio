@@ -12,7 +12,7 @@ const ContactInfo = () => {
         Reach out today, and let's embark on an exciting journey of digital transformation!</p>
         <div className="contact-option">
             <FaPhoneAlt />
-            <span className='text'>+91 8637195839</span>
+            <span className='text'>+91 8401379264</span>
         </div>
         <div className="contact-option">
             <MdEmail />

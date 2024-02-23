@@ -1,6 +1,105 @@
 @import "../../../style-config/variable.scss";
 @import "../../../style-config/mixins.scss";
 
+.description {
+    font-size: 28px;
+    color: white;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    max-height: 150px; /* Limit the height to 3 lines */
+    overflow: hidden; /* Hide overflow content */
+    transition: max-height 0.3s ease; /* Smooth transition for expanding/collapsing */
+
+    &.show-more {
+        max-height: none; /* Show full content */
+    }
+}
+.btn{
+   // display: none;
+    }
+
+
+button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes slideBottom{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.hands{
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+}
+.typed-text:nth-child(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.typed-text {
+    font-size: 28px;
+    color: white;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+  }
+
+  @keyframes slideBottom{
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+  @keyframes slideTop{
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1; 
+    }
+  }
+  @keyframes slideLeft{
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px); /* Start from -100px to the right */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Move back to its original position */
+        opacity: 1;
+    }
+}
+
+
 .intro-content {
     flex-grow: 1;
     display: flex;
@@ -30,7 +129,7 @@
             .title {
                 display: flex;
                 flex-direction: column;
-                color: $white;
+                color: $white;   
                 text-align: center;
                 @include small-screen {
                     text-align: left;
@@ -45,6 +144,12 @@
                         @include typography(42px, 400, 48px);
                     }
                     .text {
+                        color: white;
+                        font-weight: 700;
+                        transition: .3s;
+                        opacity: 0;
+                        animation: slideTop 1s ease forwards;
+                        animation-delay: 1s;
                     }
                     .icon {
                         margin-left: 10px;
@@ -54,19 +159,31 @@
                     @include typography(42px, 400, 52px);
                     @include small-screen {
                         @include typography(62px, 400, 72px);
+                        color: white;
+                        font-weight: 700;
+                        margin: -3px 0;
+                        transition: .3s;
+                        opacity: 0;
+                        animation: slideRight 1s ease forwards;
+                        animation-delay: 1s;
                     }
                 }
             }
             p {
-                @include typography(14px, 400, 20px);
-                margin: 17px 0;
-                padding: 0 15px;
+                @include typography(14px, 400, 19px);
+                //margin: 17px 0;
+                //padding: 0 15px;
                 text-align: justify;
                 color: white;
+                opacity: 0;
+                animation: slideLeft 1s ease forwards;
+                animation-delay: 1s;
+                
                 @include small-screen {
-                    @include typography(18px, 400, 24px);
+                    @include typography(19px, 400, 24px);
                     margin: 17px 0;
                     padding: 0;
+                    padding-bottom: 150px;
                 }
             }
             .call-to-action {
@@ -94,6 +211,7 @@
                 display: flex;
                 margin-bottom: 30px;
                 margin-left: 90px;
+                padding-bottom: 90px;
                 @include small-screen {
                     margin-bottom: 40px;
                 }
@@ -127,6 +245,7 @@
                     padding: 0 10px;
                     @include typography(18px, 400, 24px);
                     color: $black-light;
+                   
                     span {
                         @include typography(18px, 400, 24px);
                     }
@@ -188,6 +307,7 @@
                         }
                     }
                 }
+                
             }
         }
     }
