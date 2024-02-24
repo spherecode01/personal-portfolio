@@ -90,7 +90,7 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
       // Define your Netlify links here
       3: 'https://benevolent-licorice-9e17cc.netlify.app', //Movie X
       2: 'https://chimerical-melomakarona-91f8f3.netlify.app', //Google project id
-      5: 'https://calm-tulumba-fa2082.netlify.app', // Youtube
+      5: 'https://main--frabjous-empanada-043ec5.netlify.app', // Youtube
       8: 'https://rad-palmier-944588.netlify.app', // Admin Dashboard
       1: "https://polite-tulumba-c25fc1.netlify.app/", //Netflix clone
       7: "https://frolicking-longma-ec5ea9.netlify.app/", //Weather App
