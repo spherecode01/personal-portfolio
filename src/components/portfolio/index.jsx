@@ -7,7 +7,7 @@ import Showcase from "./showcase";
 
 
 const projectsData = [
-    {
+    /*{
         id: 1,
         name: "Netflix Clone",
         tags: ["web-app",],
@@ -18,7 +18,7 @@ const projectsData = [
           "This project is a clone of the Netflix website.movie browsing, and search functionality.",
           "",
         ]
-    },
+    },*/
    {
         id: 14,
         name: "Promptopia",
@@ -31,7 +31,7 @@ const projectsData = [
           "",
         ]
     },
-    {
+    /*{
       id: 15,
       name: "Hotel Booking",
       tags: ["mobile-app"],
@@ -42,7 +42,7 @@ const projectsData = [
         "This is a Hotel Booking Web Application",
         "",
       ]
-  },
+  },*/
     {
         id: 3,
         name: "Movie X",
@@ -54,7 +54,7 @@ const projectsData = [
           "This is a Online Streaming Platform, To stream movies and webseries you like.",
         ]
     },
-    {
+    /*{
         id: 4,
         name: "Fitness Tracker",
         tags: ["web-app",],
@@ -64,7 +64,7 @@ const projectsData = [
         details: [
           "This is a Fitness Tracker Webapplication where you can track your Progress!!.",
         ]
-    },
+    },*/
     {
         id: 5,
         name: "Youtube Clone",
@@ -87,7 +87,7 @@ const projectsData = [
           "Welcome to your gallery, where your photos are saved",
         ]
     },
-    {
+    /*{
         id: 7,
         name: "Weather App",
         tags: ["web-app"],
@@ -97,7 +97,7 @@ const projectsData = [
         details: [
           "Want to see the Live Weather Update then chech out this application.",
         ]
-    },
+    },*/
     {
         id: 8,
         name: "Admin Dashboard",

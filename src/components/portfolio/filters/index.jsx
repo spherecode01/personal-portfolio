@@ -15,10 +15,10 @@ const filtersData = [
         name: "React",
         id: "web-page",
     },
-    {
+   /* {
         name: "Angular",
         id: "web-app",
-    },
+    },*/
     {
         name: "MERN",
         id: "mobile-app",

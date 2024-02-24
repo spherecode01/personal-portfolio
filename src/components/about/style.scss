@@ -1,3 +1,7 @@
+@import "../../style-config//mixins.scss" , "../../style-config//variable.scss";
+
+
+
 body{
     color: #ededed;
     background: #081b29;
@@ -12,57 +16,72 @@ body{
         opacity: 1;
     }
   }
-.about{
+  //changing
+  .about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:  1fr; // Default to one column for small screens
     align-items: center;
-    gap: 1.5rem;
-    margin-right: 160px;
-}
-    .about-img {
-    .img-container {        //center first then outer circle (image container first then img
-        width: 100px; 
-        height: 480px;
-        //overflow: hidden; 
-        padding-right: 137px;
-        border-radius: 900px; 
-        padding-left: 233px;
-        padding-top: 100PX;
-        padding-bottom: 100px;
-        padding-top: 20px;
-        //new style
-       // background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    gap:  1.5rem;
+    margin-right:  160px;
+
+    @include medium-screen {
+        grid-template-columns: repeat(2,  1fr); // Two columns for medium screens
+    }
+
+    @include large-screen {
+        grid-template-columns: repeat(2,  1fr); // Two columns for large screens
+        margin-right:  0; // Adjust margin for larger screens if needed
     }
 }
 .about-img {
+    .img-container {
+        width:  100%; // Make container responsive
+        height: auto; // Adjust height automatically
+        padding:  20px;
+        padding-bottom: 0px; // Adjust padding for smaller screens
+
+        @include medium-screen {
+            padding:  30px; // Increase padding for medium screens
+            padding-left: 90px;
+        }
+
+        @include large-screen {
+            padding:  195px;
+            padding-left: 323px;
+            padding-bottom: 0px; // Increase padding for large screens
+        }
+    }
+//.about-img {
     .img {
         display: block;
-        border-radius: 50%;
-        padding-bottom: 20%;
-        max-width: 530px;
-        border-radius: 8px;
-        padding-top: 60px;
-        padding-left: 100px;
-        //new style
-        cursor: pointer;
-        /*height: 400px;
-        width: 400px;
-        border-radius: 50%;*/
-       
+        max-width:  100%; /* Ensures the image does not exceed its container's width */
+        height: auto; /* Maintains the aspect ratio of the image */
+        border-radius:  8px; /* Optional: to keep the image circular */
+        padding:  0px; /* Optional: adjust padding as needed */
+        padding-bottom: -31px;
+    }
+    
+    /* Media query for desktop screens */
+    @media (min-width:  1024px) {
+        .about-img .img {
+            max-width:  50%; /* Adjust the maximum width for desktop screens */
+            height:  100%; /* Adjust the height for large screens */
+            object-fit: cover; 
+            padding-bottom: 100px;
+            /* You can also adjust the height or other properties as needed */
+        }
     }
 }
-  
-  
-  
-.about-text h2{
-    font-size: 60px;
-}
+//}
 .about-text h2 span{
+    //background: #000000;
     color: #0ef;
+    //color: transparent;
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
     display: inline-block;
+    //border: 2px solid transparent;
     padding: 5px 10px;
     transition: text-shadow 0.5s, border-color 0.5s;
 }
@@ -70,22 +89,51 @@ body{
     text-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan;
+    border-color: cyan; /* Change border color on hover */
+    /*box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan,
+                0 0 200px cyan;*/
 }
-.about-text h4{
-    font-size: 29px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.7;
-    margin: 15px 0 30px;
+  
+  
+.about-text h2 {
+    @include typography(32px,  600,  1.2); // Adjust size and weight for smaller screens
+
+    @include medium-screen {
+        @include typography(48px,  600,  1.3); // Adjust for medium screens
+    }
+
+    @include large-screen {
+        @include typography(60px,  600,  1.4); // Adjust for large screens
+    }
 }
-.about-text p{
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-    //margin-right: 60px;
-    padding-right: 140px;
-    
+
+.about-text h4 {
+    @include typography(20px,  600,  1.5); // Adjust size and weight for smaller screens
+
+    @include medium-screen {
+        @include typography(24px,  600,  1.6); // Adjust for medium screens
+    }
+
+    @include large-screen {
+        @include typography(28px,  600,  1.7); // Adjust for large screens
+        padding-right: 20px;
+    }
+}
+
+.about-text p {
+    @include typography(16px,  400,  1.6); // Adjust size and weight for smaller screens
+
+    @include medium-screen {
+        @include typography(18px,  400,  1.7); // Adjust for medium screens
+    }
+
+    @include large-screen {
+        @include typography(20px,  400,  1.8); // Adjust for large screens
+    }
+    text-align: justify;
 }
 #services{
     color: aliceblue;
@@ -128,27 +176,73 @@ body{
                 0 0 200px cyan;*/
 }
 .container {
-    padding: 90px;
-    padding-bottom: 90px;
+    padding:  40px; /* Adjusted padding for small screens */
+    padding-bottom:  40px;
 }
-.services-list{
+
+/* Adjust padding for medium screens */
+@media (min-width:  768px) {
+    .container {
+        padding:  60px;
+        padding-bottom:  60px;
+    }
+}
+
+/* Adjust padding for large screens */
+@media (min-width:  1024px) {
+    .container {
+        padding:  90px;
+        padding-bottom:  90px;
+    }
+}
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
-    grid-gap:40px;
-    margin-top: 10px;
-    padding-top: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(259px,  1fr));
+    grid-gap:  20px; /* Adjusted grid gap for small screens */
+    margin-top:  10px;
+    padding-top:  2px;
 }
-.services-list div{
+
+/* Adjust grid gap for medium screens */
+@media (min-width:  768px) {
+    .services-list {
+        grid-gap:  40px;
+    }
+}
+
+/* Adjust grid gap for large screens */
+@media (min-width:  1024px) {
+    .services-list {
+        grid-gap:  60px;
+    }
+}
+.services-list div {
     background-color: transparent;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 13px;
-    border-right: 10px;
-    border-radius: 20px;
-    transition: backround 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7,
-    1px 1px 40px #0053b8f7
+    padding:  20px; /* Adjusted padding for small screens */
+    font-size:  12px; /* Adjusted font size for small screens */
+    font-weight:  400; /* Corrected font-weight value */
+    border-right:  10px;
+    border-radius:  20px;
+    transition: background  0.5s, transform  0.5s;
+    box-shadow:  1px  1px  20px #012290f7,  1px  1px  40px #0053b8f7;
 }
+
+/* Adjust properties for medium screens */
+@media (min-width:  768px) {
+    .services-list div {
+        padding:  30px;
+        font-size:  14px;
+    }
+}
+
+/* Adjust properties for large screens */
+@media (min-width:  1024px) {
+    .services-list div {
+        padding:  40px;
+        font-size:  16px;
+    }
+}
+
 .tab{
     padding-top: 80px;
     height: 600px;
