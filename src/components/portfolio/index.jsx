@@ -87,17 +87,17 @@ const projectsData = [
           "Welcome to your gallery, where your photos are saved",
         ]
     },
-    /*{
-        id: 7,
-        name: "Weather App",
-        tags: ["web-app"],
+    {
+        id: 17,
+        name: "Snake Game",
+        tags: ["product"],
         media: {
-            thumbnail: require("../images/weather2.jpg"),
+            thumbnail: require("../images/snake.png"),
         },
         details: [
-          "Want to see the Live Weather Update then chech out this application.",
+          "Complete the game build on Vanilla javascript",
         ]
-    },*/
+    },
     {
         id: 8,
         name: "Admin Dashboard",
@@ -120,17 +120,17 @@ const projectsData = [
         "This is a Shoes store for Nike Brand",
       ]
   },
-  /*{
-    id: 10,
-    name: "Business Site",
+  {
+    id: 16,
+    name: "Spotify",
     tags: [ "product"],
     media: {
-        thumbnail: require("../images/business.jpg"),
+        thumbnail: require("../images/spotify.jpg"),
     },
     details: [
-      "A simple structure of a static business website",
+      "Stream your Favourite music here on this platform",
     ]
-},*/
+},
 {
   id: 11,
   name: "E-Commerce",
