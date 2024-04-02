@@ -103,7 +103,8 @@ const Showcase = ({ data, transition, selectedProjectId, setSelectedProjectId })
       14: "https://eclectic-stroopwafel-dbfb70.netlify.app/", //social-media
       15: "https://helpful-muffin-78b947.netlify.app", // hotel booking
       16: "https://celadon-shortbread-fdde87.netlify.app",// Spotify
-      17: "https://verdant-manatee-1bf0be.netlify.app"// Snake game
+      17: "https://verdant-manatee-1bf0be.netlify.app",// Snake game
+      18: "https://mern-food-ordering-app-frontend-4egf.onrender.com",//food app
     };
 
     const netlifyLink = netlifyLinks[projectId];

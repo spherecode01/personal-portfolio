@@ -31,18 +31,18 @@ const projectsData = [
           "",
         ]
     },
-    /*{
-      id: 15,
+    {
+      id: 18,
       name: "Hotel Booking",
       tags: ["mobile-app"],
       media: {
-          thumbnail: require("../images/hotel.jpg"),
+          thumbnail: require("../images/food.png"),
       },
       details: [
-        "This is a Hotel Booking Web Application",
+        "This is a Food ordering Application",
         "",
       ]
-  },*/
+  },
     {
         id: 3,
         name: "Movie X",
