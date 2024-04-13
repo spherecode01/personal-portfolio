@@ -7,18 +7,7 @@ import Showcase from "./showcase";
 
 
 const projectsData = [
-    /*{
-        id: 1,
-        name: "Netflix Clone",
-        tags: ["web-app",],
-        media: {
-            thumbnail: require("../images/nf.jpg"),
-        },
-        details: [
-          "This project is a clone of the Netflix website.movie browsing, and search functionality.",
-          "",
-        ]
-    },*/
+   
    {
         id: 14,
         name: "Promptopia",
@@ -31,6 +20,18 @@ const projectsData = [
           "",
         ]
     },
+    {
+      id: 19,
+      name: "Real Estate",
+      tags: ["mobile-app",],
+      media: {
+          thumbnail: require("../images/estate.webp"),
+      },
+      details: [
+        "This project is a real Estate Project.",
+        "",
+      ]
+  },
     {
       id: 18,
       name: "Hotel Booking",
